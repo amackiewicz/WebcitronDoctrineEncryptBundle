@@ -1,8 +1,8 @@
 <?php
 
-namespace Ambta\DoctrineEncryptBundle\Command;
+namespace Webcitron\DoctrineEncryptBundle\Command;
 
-use Ambta\DoctrineEncryptBundle\DependencyInjection\DoctrineEncryptExtension;
+use Webcitron\DoctrineEncryptBundle\DependencyInjection\DoctrineEncryptExtension;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
 use Symfony\Component\Console\Helper\ProgressBar;

@@ -1,7 +1,7 @@
 <?php
-namespace Ambta\DoctrineEncryptBundle\Command;
+namespace Webcitron\DoctrineEncryptBundle\Command;
 
-use Ambta\DoctrineEncryptBundle\Subscribers\DoctrineEncryptSubscriber;
+use Webcitron\DoctrineEncryptBundle\Subscribers\DoctrineEncryptSubscriber;
 use Doctrine\Common\Annotations\AnnotationReader;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Bundle\FrameworkBundle\Command\ContainerAwareCommand;
@@ -110,7 +110,7 @@ abstract class AbstractCommand extends ContainerAwareCommand
         $properties    = [];
 
         foreach ($propertyArray as $property) {
-            if ($this->annotationReader->getPropertyAnnotation($property, 'Ambta\DoctrineEncryptBundle\Configuration\Encrypted')) {
+            if ($this->annotationReader->getPropertyAnnotation($property, 'Webcitron\DoctrineEncryptBundle\Configuration\Encrypted')) {
                 $properties[] = $property;
             }
         }

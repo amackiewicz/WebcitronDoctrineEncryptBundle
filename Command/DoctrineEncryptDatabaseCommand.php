@@ -1,8 +1,8 @@
 <?php
 
-namespace Ambta\DoctrineEncryptBundle\Command;
+namespace Webcitron\DoctrineEncryptBundle\Command;
 
-use Ambta\DoctrineEncryptBundle\DependencyInjection\DoctrineEncryptExtension;
+use Webcitron\DoctrineEncryptBundle\DependencyInjection\DoctrineEncryptExtension;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;

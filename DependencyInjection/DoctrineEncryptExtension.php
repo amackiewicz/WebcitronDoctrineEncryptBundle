@@ -1,6 +1,6 @@
 <?php
 
-namespace Ambta\DoctrineEncryptBundle\DependencyInjection;
+namespace Webcitron\DoctrineEncryptBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -18,8 +18,8 @@ use Symfony\Component\Finder\Finder;
 class DoctrineEncryptExtension extends Extension
 {
     public static $supportedEncryptorClasses = array(
-        'Defuse' => 'Ambta\DoctrineEncryptBundle\Encryptors\DefuseEncryptor',
-        'Halite' => 'Ambta\DoctrineEncryptBundle\Encryptors\HaliteEncryptor',
+        'Defuse' => 'Webcitron\DoctrineEncryptBundle\Encryptors\DefuseEncryptor',
+        'Halite' => 'Webcitron\DoctrineEncryptBundle\Encryptors\HaliteEncryptor',
     );
 
     /**

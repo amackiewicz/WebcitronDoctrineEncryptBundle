@@ -1,6 +1,6 @@
 services:
     ambta_doctrine_encrypt.orm_subscriber:
-        class: Ambta\DoctrineEncryptBundle\Subscribers\DoctrineEncryptSubscriber
+        class: Webcitron\DoctrineEncryptBundle\Subscribers\DoctrineEncryptSubscriber
         arguments: ["@annotation_reader", "@ambta_doctrine_encrypt.encryptor"]
         tags:
             -  { name: doctrine.event_subscriber }

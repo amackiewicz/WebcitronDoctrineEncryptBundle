@@ -1,6 +1,6 @@
 <?php
 
-namespace Ambta\DoctrineEncryptBundle\Subscribers;
+namespace Webcitron\DoctrineEncryptBundle\Subscribers;
 
 use ReflectionClass;
 use Doctrine\ORM\Event\PostFlushEventArgs;
@@ -11,7 +11,7 @@ use Doctrine\ORM\Event\PreUpdateEventArgs;
 use Doctrine\ORM\Event\PreFlushEventArgs;
 use Doctrine\Common\Annotations\Reader;
 use Doctrine\Common\Util\ClassUtils;
-use Ambta\DoctrineEncryptBundle\Encryptors\EncryptorInterface;
+use Webcitron\DoctrineEncryptBundle\Encryptors\EncryptorInterface;
 use Symfony\Component\PropertyAccess\PropertyAccess;
 
 /**
@@ -27,12 +27,12 @@ class DoctrineEncryptSubscriber implements EventSubscriber
     /**
      * Encryptor interface namespace
     */
-    const ENCRYPTOR_INTERFACE_NS = 'Ambta\DoctrineEncryptBundle\Encryptors\EncryptorInterface';
+    const ENCRYPTOR_INTERFACE_NS = 'Webcitron\DoctrineEncryptBundle\Encryptors\EncryptorInterface';
 
     /**
      * Encrypted annotation full name
     */
-    const ENCRYPTED_ANN_NAME = 'Ambta\DoctrineEncryptBundle\Configuration\Encrypted';
+    const ENCRYPTED_ANN_NAME = 'Webcitron\DoctrineEncryptBundle\Configuration\Encrypted';
 
     /**
      * Encryptor
