@@ -1,0 +1,35 @@
+{
+    "name": "amackiewicz/doctrine-encrypt-bundle",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/amackiewicz/WebcitronDoctrineEncryptBundle"
+        }
+    ],
+    "type": "library",
+    "keywords": ["doctrine", "symfony", "halite", "defuse", "encrypt", "decrypt"],
+    "license": "MIT",
+    "description": "Encrypted symfony entity's by verified and standardized libraries. Fixed version of michaeldegroot/doctrine-encrypt-bundle",
+    "require": {
+        "php": ">=7.0",
+        "paragonie/halite": "^4.3",
+        "paragonie/sodium_compat": "^1.5",
+        "amackiewicz/doctrine-encrypt-bundle": "dev-master"
+    },
+    "suggest":{
+        "defuse/php-encryption": "Alternative for halite for use with older php-versions"
+    },
+    "autoload": {
+        "psr-0": { "Webcitron\\DoctrineEncryptBundle": "" }
+    },
+    "target-dir": "Webcitron/DoctrineEncryptBundle",
+    "authors": [
+        {
+            "name": "Webcitron // Adam Mackiewicz",
+            "email": "a.mackiewicz@webcitron.eu"
+        }, {
+            "name": "Michael de Groot",
+            "email": "specamps@gmail.com"
+        }
+    ]
+}
